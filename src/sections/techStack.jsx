@@ -6,6 +6,7 @@ import redux from "../assets/redux.png"
 import firebase from "../assets/firebase.png"
 import bootstrap from "../assets/bootstrap.png"
 import flutter from "../assets/flutter.png"
+import electron from "../assets/electron.png"
 function TechStack() {
   const MongoIcon = () => <img src={mogo} className="tech" />;
   const ExpressIcon = () => <img src={express} className="tech" />;
@@ -13,6 +14,7 @@ function TechStack() {
   const Bootstrap = () => <img src={bootstrap} className="tech" />;
   const Firebase = () => <img src={firebase} className="tech" />;
   const Flutter = () => <img src={flutter} className="tech" />;
+  const Electron = () => <img src={electron} className="tech" />;
   const techs = [
     { color: "red", name: "HTML", icon: FaHtml5, years: 5 },
     { color: "#e6e600", name: "Javascript", icon: FaJsSquare, years: 5 },
@@ -31,6 +33,7 @@ function TechStack() {
     { color: "orange", name: "Firebase", icon: Firebase, years: 2 },
     { color: "#0066ff", name: "Python", icon: FaPython, years: 2 },
     { color: "none", name: "Flutter", icon: Flutter, years: 1 },
+    { color: "none", name: "Electron", icon: Electron, years: 0.5 },
   ]
   return (
     <div>
@@ -46,7 +49,7 @@ function TechStack() {
             {techs.map(tech => {
               return <Col key={tech.name} xs={6} md={3} lg={2}>
                 <Stack className="align-items-center justify-content-center h-100">
-                  {tech.color != "null" ? tech.icon({ color: tech.color, size: 80, className: 'tech' }) : tech.icon()}
+                  {tech.color != "null" ? tech.icon({ color: tech.color, size: 50, className: 'tech' }) : tech.icon()}
                   <div className="text-center bg-primary text-white p-1 mt-1 rounded-2">
                     <b>{tech.name}</b><br />
                     Experience: <b>{tech.years} Years</b>

@@ -65,8 +65,14 @@ span.grad {
   }
 }
 
+img.tech{
+  width: 50px !important;
+  height: 50px !important;
+}
+
 .tech-stack {
   .tech {
+    
     &+div {
       opacity: 0;
       transition-duration: 0.5s;
