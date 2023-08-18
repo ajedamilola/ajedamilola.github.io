@@ -1,5 +1,5 @@
 import { Col, Container, Row, Stack } from "react-bootstrap"
-import { FaCss3, FaDatabase, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaPython, FaReact, FaSass, FaWordpress,  } from "react-icons/fa"
+import { FaCss3, FaDatabase, FaGithub, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaPython, FaReact, FaSass, FaWordpress,  } from "react-icons/fa"
 import mogo from "../assets/mongo.png"
 import express from "../assets/express.png"
 import redux from "../assets/redux.png"
@@ -19,6 +19,7 @@ function TechStack() {
     { color: "#0066ff", name: "CSS", icon: FaCss3, years: 5 },
     { color: "#0066ff", name: "React JS", icon: FaReact, years: 3 },
     { color: "green", name: "NodeJs", icon: FaNodeJs, years: 3 },
+    { color: "#777", name: "Github", icon: FaGithub, years: 3 },
     { color: "none", name: "Express JS", icon: ExpressIcon, years: 3 },
     { color: "hotpink", name: "SASS", icon: FaSass, years: 3 },
     { color: "none", name: "Redux", icon: Redux, years: 3 },
