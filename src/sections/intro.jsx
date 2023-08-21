@@ -17,7 +17,7 @@ function Intro() {
       backDelay: 1000,
       typeSpeed: 20,
       loop:true,
-      cursorChar:">"
+      // cursorChar:">"
     })
     return () => {
       // Destroy Typed instance during cleanup to stop animation
