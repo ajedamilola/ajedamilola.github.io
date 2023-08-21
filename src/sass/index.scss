@@ -89,3 +89,15 @@ img.tech{
 width: 80%;
 margin: auto;
 }
+
+.text{
+  &{
+    font-size: .9em;
+  }
+  &-sm{
+    font-size: .8rem;
+  }
+}
+a{
+  text-decoration: none !important;
+}
