@@ -28,9 +28,9 @@ function Intro() {
     <div>
       <section className="section">
         <Container>
-          <Row className="align-items-center justify-content-around">
+          <Row className="align-items-center justify-content-around text-center text-lg-start">
             <Col lg={7}>
-              <h1 className="fw-bold display-4">
+              <h1 className="fw-bold display-3" data-aos="fade-up" data-aos-duration="1000">
                 Hello 👋️,<br />
                 My name is<br />
                 <span>Aje Damilola.</span><br />
@@ -38,7 +38,7 @@ function Intro() {
               </h1>
             </Col>
             <Col lg={4}>
-              <div className="round-gradient">
+              <div className="round-gradient" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <img src={me} />
               </div>
             </Col>

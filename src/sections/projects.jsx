@@ -17,14 +17,16 @@ function Projects() {
     <div>
       <section className="section">
         <Container>
-          <h1 className="display-5 fw-bold">
-            My Projects
-          </h1>
+          <div data-aos='fade-right' >
+            <h1 className="display-5 fw-bold">
+              My Projects
+            </h1>
           <p className="">What i have done so far</p>
-          <Row>
-            {projects.map(s => <Col key={s.name} lg={4} md={6} sm={12}>
+          </div>
+          <Row className="g-3">
+            {projects.map(s => <Col key={s.name} lg={4} md={6} sm={12} data-aos='slide-up' data-aos-delay={`${projects.indexOf(s)}00`}>
               <Card className="shadow-sm border-0 h-100 rounded-4 overflow-hidden">
-                <div style={{ height: 300, overflow: "hidden", maxWidth:"100%" }}>
+                <div style={{ height: 300, overflow: "hidden", maxWidth: "100%" }}>
                   <Card.Img src={s.cover} variant="top" style={{ width: "auto", minHeight: "100%", minWidth: "100%" }} />
                 </div>
                 <Card.Body>

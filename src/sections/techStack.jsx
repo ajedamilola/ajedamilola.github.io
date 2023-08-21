@@ -37,7 +37,7 @@ function TechStack() {
   ]
   return (
     <div>
-      <section className="section tech-stack">
+      <section className="section tech-stack" data-aos='fade-up' data-aos-duration="1000">
         <Container>
           <div className="text-center">
             <h1 className="fw-bold display-5">
@@ -47,7 +47,7 @@ function TechStack() {
           </div>
           <Row>
             {techs.map(tech => {
-              return <Col key={tech.name} xs={6} md={3} lg={2}>
+              return <Col key={tech.name} xs={4} md={3} lg={2}>
                 <Stack className="align-items-center justify-content-center h-100">
                   {tech.color != "null" ? tech.icon({ color: tech.color, size: 50, className: 'tech' }) : tech.icon()}
                   <div className="text-center bg-primary text-white p-1 mt-1 rounded-2">

@@ -10,25 +10,27 @@ function Appbar() {
         { name: "Contact", href: "contact" }
     ]
     return (
-        <Navbar fixed="top">
+        <Navbar fixed="top" expand="lg">
             <Container>
-                <Navbar.Brand>AJE</Navbar.Brand>
+                <Navbar.Brand className="fw-bold">DAMI</Navbar.Brand>
                 <Navbar.Toggle />
-                <Nav>
-                    {links.map(link => <Nav.Link key={link.name}>{link.name}</Nav.Link>)}
-                    <Nav.Link>
-                        <FaGithub />
-                    </Nav.Link>
-                    <Nav.Link>
-                        <FaLinkedin />
-                    </Nav.Link>
-                    <Nav.Link>
-                        <FaFacebook />
-                    </Nav.Link>
-                    <Nav.Link>
-                        <FaEnvelope />
-                    </Nav.Link>
-                </Nav>
+                <Navbar.Collapse>
+                    <Nav className="ms-auto">
+                        {links.map(link => <Nav.Link key={link.name}>{link.name}</Nav.Link>)}
+                        <Nav.Link>
+                            <FaGithub />
+                        </Nav.Link>
+                        <Nav.Link>
+                            <FaLinkedin />
+                        </Nav.Link>
+                        <Nav.Link>
+                            <FaFacebook />
+                        </Nav.Link>
+                        <Nav.Link>
+                            <FaEnvelope />
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     )
