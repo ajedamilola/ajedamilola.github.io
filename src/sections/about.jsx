@@ -11,9 +11,10 @@ function About() {
           <Row className="g-5">
             <Col lg={6}>
               <h1 className="fw-bold display-5" data-aos='fade-right'>About Me</h1>
-              <div className="text text-muted" data-aos='fade-right'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima vero assumenda aut at impedit,
-                molestias numquam. Dolor, at veniam excepturi itaque, id animi ullam ex illo veritatis
-                nihil quibusdam beatae?
+              <div className="text text-muted" data-aos='fade-right'>
+                I am a Full stack web and Software developer. I specialise in JavaScript
+                (Browser, Node, React and React Native) Flutter, SASS, CSS, MongoDB,
+                SQL Flutter and more.
               </div>
               <h2 className="fw-bold mt-5" data-aos='fade-right'>Work Experiences</h2>
               <div data-aos="fade-right">
@@ -29,11 +30,11 @@ function About() {
             </Col>
             <Col lg={6}>
               <h1 className="fw-bold display-" data-aos='fade'>Skills</h1>
-              <Skill title={"Programming"} value={80} anim='fade-left' delay="000"/>
-              <Skill title={"Problem Solving"} value={92} anim='fade-left' delay="200"/>
-              <Skill title={"Design"} value={60} anim='fade-left' delay="300"/>
-              <Skill title={"Collaboration"} value={70} anim='fade-left' delay="400"/>
-              <Skill title={"Management"} value={80} anim='fade-left' delay="500"/>
+              <Skill title={"Programming"} value={80} anim='fade-left' delay="000" />
+              <Skill title={"Problem Solving"} value={92} anim='fade-left' delay="200" />
+              <Skill title={"Design"} value={60} anim='fade-left' delay="300" />
+              <Skill title={"Collaboration"} value={70} anim='fade-left' delay="400" />
+              <Skill title={"Management"} value={80} anim='fade-left' delay="500" />
             </Col>
           </Row>
 
